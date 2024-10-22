@@ -84,8 +84,8 @@ sumando([1,2,4,8,12,16])
 
 #Funciones anidadas
 
-def funcionExterna(x): # x en este punto vale 3
-    def funcionInterna(y):
+def funcionExterna(x): # x en este punto vale 3, Tiene un scope Global
+    def funcionInterna(y): #Scope local
         return y ** 2
     resultado = funcionInterna(x) # LLamando a la funcion interna
     return resultado + 1 #Sumando 1 al resultado de la funcion interna

@@ -92,3 +92,49 @@ def funcionExterna(x): # x en este punto vale 3, Tiene un scope Global
 
 resultadoFinal =funcionExterna(3)
 print("El resultado final de la funcion anidada es: ",resultadoFinal)
+
+
+# Recursividad.
+# Contiene 2 conceptos
+
+# 1) el caso base : es la condicion que va a detener la recursion. 
+# sin un caso base , la funcion  se estaria llamando a si misma indefinidamente 
+# lo que nos llevaria a un desbordamiento de pila (Stack Overflow)
+
+#2) caso recursivo: esta es la parte de la funcion donde se llama a si misma, 
+# pero con un argumento modificado que eventualmente alcanzara al caso base
+
+# Factorial de un numero: es el producto de todos los numeros enteros desde el 1 hasta n
+
+#1....n si n = 5 entonces seria : 1*2*3*4*5 = 120
+
+# factorial iterativo
+
+def factorialIterativo(n):
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i # resultado = resultado * i
+    return resultado
+
+
+n = 5
+print(f"El factorial de {n} es",factorialIterativo(5))
+
+
+def factorialRecursivo(n):
+    #caso base
+    if n == 0:
+        return 1
+    #caso recursivo
+    else:
+        return n * factorialRecursivo(n -1)
+
+
+print(f"factorial recursivo de {n} es:", factorialRecursivo(n))
+
+
+
+
+
+
+

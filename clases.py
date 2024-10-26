@@ -104,6 +104,9 @@ producto1 = Producto("Laptop", 1200, 10)
 producto1.vender(2)
 print(f"Stock de {producto1.nombre}: {producto1.cantidad}")
 
+
+
+
     
 
 

@@ -104,7 +104,10 @@ producto1 = Producto("Laptop", 1200, 10)
 producto1.vender(2)
 print(f"Stock de {producto1.nombre}: {producto1.cantidad}")
 
-
+# 3. Sistema de gestion bancaria
+# 1. crear la clase
+# 2. Crear 2 metodos (Depositar, retirar)
+# 3. Que me diga si tengo fondos suficientes para retirar o no.
 
 
     
